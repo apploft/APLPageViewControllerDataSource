@@ -1,0 +1,7 @@
+pod "APLPageViewControllerDataSource", :path => "../APLPageViewControllerDataSource.podspec"
+
+target "Demo" do
+end
+
+target "DemoTests" do
+end
