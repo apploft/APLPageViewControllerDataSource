@@ -1,0 +1,14 @@
+PODS:
+  - APLPageViewControllerDataSource (0.1.0)
+
+DEPENDENCIES:
+  - APLPageViewControllerDataSource (from `../APLPageViewControllerDataSource.podspec`)
+
+EXTERNAL SOURCES:
+  APLPageViewControllerDataSource:
+    :path: ../APLPageViewControllerDataSource.podspec
+
+SPEC CHECKSUMS:
+  APLPageViewControllerDataSource: 6517547ba376b26e3872eba4f20ea878570bb706
+
+COCOAPODS: 0.29.0
