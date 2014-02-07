@@ -6,6 +6,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                         APLPageViewControllerDataSource provides an index based API on top of the viewControllerBeforeViewController and viewControllerAfterViewController API of UIPageViewController.
                        DESC
+  s.homepage         = "https://github.com/apploft/APLPageViewControllerDataSource"
   s.license          = 'MIT'
   s.author           = { "Tobias Conradi" => "tconradi@apploft.de" }
   s.source           = { :git => "https://github.com/apploft/APLPageViewControllerDataSource.git", :tag => s.version.to_s }
