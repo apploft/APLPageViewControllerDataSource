@@ -48,8 +48,7 @@
 #pragma mark - APLPageViewControllerDataSourceDelegate
 - (UIViewController*)pageViewControllerDataSource:(APLPageViewControllerDataSource *)dataSource contentViewControllerForIndex:(NSUInteger)index {
     APLContentViewController *detailViewController = [APLContentViewController instantiateFromStoryboard];
-    id item = dataSource.objects[index];
-    detailViewController.item = item;
+    detailViewController.item = dataSource.objects[index];
     return detailViewController;
 }
 

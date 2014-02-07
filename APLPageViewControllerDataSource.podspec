@@ -1,17 +1,11 @@
-#
-# Be sure to run `pod spec lint NAME.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# To learn more about the attributes see http://guides.cocoapods.org/syntax/podspec.html
-#
+
 Pod::Spec.new do |s|
   s.name             = "APLPageViewControllerDataSource"
   s.version          = "0.1.0"
   s.summary          = "APLPageViewControllerDataSource is an array based data source for UIPageViewController."
-#  s.description      = <<-DESC
-#                       DESC
-  s.homepage         = "http://EXAMPLE/NAME"
-  s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.description      = <<-DESC
+                        APLPageViewControllerDataSource provides an index based API on top of the viewControllerBeforeViewController and viewControllerAfterViewController API of UIPageViewController.
+                       DESC
   s.license          = 'MIT'
   s.author           = { "Tobias Conradi" => "tconradi@apploft.de" }
   s.source           = { :git => "https://github.com/apploft/APLPageViewControllerDataSource.git", :tag => s.version.to_s }

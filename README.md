@@ -3,6 +3,7 @@
 [![Version](http://cocoapod-badges.herokuapp.com/v/APLPageViewControllerDataSource/badge.png)](http://cocoadocs.org/docsets/APLPageViewControllerDataSource)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/APLPageViewControllerDataSource/badge.png)](http://cocoadocs.org/docsets/APLPageViewControllerDataSource)
 
+APLPageViewControllerDataSource provides an index based API on top of the viewControllerBeforeViewController and viewControllerAfterViewController API of UIPageViewController.
 
 ## Installation
 
@@ -33,8 +34,7 @@ Declare the protocol methods required to configure the view controller
 
     - (UIViewController*)pageViewControllerDataSource:(APLPageViewControllerDataSource *)dataSource contentViewControllerForIndex:(NSUInteger)index {
         APLContentViewController *detailViewController = [APLContentViewController instantiateFromStoryboard]; // use your own content view controller class
-        id item = dataSource.objects[index];
-        detailViewController.item = item; // configure your view controller
+        detailViewController.item = dataSource.objects[index]; // configure your view controller
         return detailViewController;
     }
     
