@@ -26,8 +26,10 @@
 }
 
 -(void)setObjects:(NSArray *)objects selectIndex:(NSUInteger)index {
+    [self willChangeValueForKey:@"objects"];
     _objects = objects;
     [self updatePageViewControllerSelectedIndex:index];
+    [self didChangeValueForKey:@"objects"];
 }
 
 
@@ -60,8 +62,10 @@
 -(void)setCurrentPage:(NSUInteger)index {
     NSAssert(index < [self.objects count], @"Invalid index");
     
+    [self willChangeValueForKey:@"currentPage"];
     _currentPage = index;
     [self updatePageViewControllerSelectedIndex:_currentPage];
+    [self didChangeValueForKey:@"currentPage"];
 }
 
 - (void)dealloc {
