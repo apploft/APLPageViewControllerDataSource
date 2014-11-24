@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "APLPageViewControllerDataSource"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "APLPageViewControllerDataSource is an array based data source for UIPageViewController."
   s.description      = <<-DESC
                         APLPageViewControllerDataSource provides an index based API on top of the viewControllerBeforeViewController and viewControllerAfterViewController API of UIPageViewController.
